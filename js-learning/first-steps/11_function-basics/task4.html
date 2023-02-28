@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let x = +prompt("Шо будем возводить?");
+      let n = +prompt("В какую степень?");
+
+      function pow(a, b) {
+        if (b < 1 || b % 1 !== 0)
+          return "Не надо дробных степеней, мы не математики, а программисты";
+        return Math.pow(a, b);
+      }
+      alert(pow(x, n));
+    </script>
+  </body>
+</html>

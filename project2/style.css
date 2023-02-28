@@ -1,0 +1,243 @@
+.footer .footer__button, .section3 .section3__container .section3__container__inner .section3__container__button, .section2 .section2__container .section2__container__item .section2__container__item__button, .section1 .section1__item .section1__item__button, .header .header__item .header__item__button {
+  width: 170px;
+  height: 40px;
+  border-radius: 40px;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.footer__footer, .footer, .section3, .section2 .section2__container, .section2 .section2__title, .header, ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto"), url("Roboto.ttf") format("truetype");
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto";
+  color: #000000;
+  background-color: #efefef;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 33px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.top-menu {
+  background-color: #e5e5e5;
+  color: #333333;
+}
+
+.main-menu {
+  border-top: 1px solid #efefef;
+  background-color: #ffffff;
+}
+
+ul {
+  justify-content: center;
+  margin: 0;
+  list-style-type: none;
+}
+ul li {
+  cursor: pointer;
+  margin: 15px;
+}
+
+.header {
+  background-color: #ffffff;
+  justify-content: space-around;
+  padding: 20px;
+}
+.header .header__item__title {
+  color: #66c05d;
+  letter-spacing: 0.1em;
+}
+.header .header__item {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.header .header__item .header__item__phone {
+  font-size: 16px;
+}
+.header .header__item .header__item__button {
+  border: 2px solid #66c05d;
+  line-height: 16px;
+}
+
+.section1 {
+  background-color: #66c05d;
+  background-position: center;
+  height: 604px;
+  background-size: cover;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+@media screen and (min-width: 720px) {
+  .section1 {
+    background-image: url("public/Rectangle 2.png");
+  }
+}
+.section1 .section1__item {
+  padding-left: 10%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+@media screen and (max-width: 720px) {
+  .section1 .section1__item {
+    align-items: center;
+  }
+}
+.section1 .section1__item .section1__item__title {
+  font-weight: 700;
+  font-size: 48px;
+  color: #ffffff;
+}
+.section1 .section1__item .section1__item__subtitle {
+  color: #ffffff;
+  width: 320px;
+  line-height: 20px;
+}
+.section1 .section1__item .section1__item__button {
+  border: 2px solid #ffffff;
+  color: #ffffff;
+}
+
+.section2 {
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 38px;
+  line-height: 28px;
+}
+.section2 .section2__title {
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  font-weight: 700;
+  font-size: 24px;
+}
+@media screen and (max-width: 720px) {
+  .section2 .section2__title img {
+    display: none;
+  }
+}
+.section2 .section2__container {
+  justify-content: center;
+}
+.section2 .section2__container .section2__container__item {
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  gap: 20px;
+  padding: 25px 0px;
+}
+.section2 .section2__container .section2__container__item img {
+  padding: 0 65px;
+}
+.section2 .section2__container .section2__container__item .section2__container__item__button {
+  width: 130px;
+  height: 35px;
+  background: #66c05d;
+  border-radius: 30px;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+.section2 .section2__container .section2__container__item .section2__container__item__price {
+  font-weight: 500;
+  font-size: 21px;
+}
+
+.section3 .section3__container {
+  width: 540px;
+  height: 212px;
+  background: #66c05d;
+  display: flex;
+  margin: 15px;
+  padding: 35px;
+  justify-content: space-between;
+}
+.section3 .section3__container .section3__container__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.section3 .section3__container .section3__container__inner .section3__container__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+}
+.section3 .section3__container .section3__container__inner .section3__container__subtitle {
+  line-height: 20px;
+  color: #ffffff;
+  margin: 0;
+}
+.section3 .section3__container .section3__container__inner .section3__container__button {
+  height: 35px;
+  border: 2px solid #ffffff;
+  border-radius: 30px;
+  color: #ffffff;
+}
+.section3 input {
+  border: none;
+  width: 225px;
+  height: 35px;
+  background-color: #ffffff;
+  border-radius: 30px;
+  text-align: center;
+  color: #c4c4c4;
+}
+
+.footer {
+  background-color: #ffffff;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px;
+  width: 100%;
+}
+.footer .footer__contacts {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.footer .footer__button {
+  border: 2px solid #66c05d;
+}
+.footer .footer__icons {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #66c05d;
+  border-radius: 50%;
+}
+.footer .footer__phone {
+  font-size: 16px;
+}
+
+.footer__footer {
+  font-size: 12px;
+  color: #828282;
+  justify-content: space-around;
+  padding: 20px;
+}/*# sourceMappingURL=style.css.map */
